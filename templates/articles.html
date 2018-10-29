@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block header %}
+
+<div class="jumbotron-fluid"  >
+    <h2 class="display-4" style="margin-left:40%;padding-top: 5%;">
+        articles </h2>
+        <div class="list-group">
+            
+        {% for article in articles %}
+      <li class="list-group-item" style="width: 80%;margin: auto;align-content: center;padding-left:15%;"  ><a href="article/{{article.id}}"> {{article.title}} </a></li>    
+          
+        {% endfor %}
+   
+
+        </div>
+    
+</div>
+<hr class="" style="color: rgb(7, 241, 163); margin-top: 10%; margin-bottom: 10%; ">
+
+{% endblock %}
