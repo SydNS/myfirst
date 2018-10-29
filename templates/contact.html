@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% block header %}
+
+<div class="jumbotron-fluid "  >
+    <h2 class="display-4" style="margin-left:40%;padding-top: 5%;" >
+       contact us
+    </h2>
+    <form class="lead" style="width: 80%;margin: auto;align-content: center;padding-top: 5%;">
+         
+        <div class="form-group">
+            <div class="row"> 
+                <div class="col-4">
+                        <label>email</label>
+                        <input type="email" class="form-control">
+                        <small style="font-size: 15px;">
+                            we wont share your email with anyone 
+                        </small>
+                     </div>
+                    
+               <div class="col-4">
+                            <label>name</label>
+                            <input type="text" class="form-control">
+                            
+
+                    </div>
+                    
+                <div class="col-4">
+                            <label>password</label>
+                            <input type="password" class="form-control">
+              
+
+                    </div>
+                    
+            </div>  
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"><button class="btn btn-success "  type="submit">send</button></div>
+                <div class="col-4"></div>
+            </div>
+            
+
+          </div>  
+    </form>
+</div>
+<hr class="" style="color: rgb(7, 241, 163); margin-top: 5.53%; margin-bottom: 10%">
+
+{% endblock %}

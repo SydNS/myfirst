@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bstrap </title>
+	<link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">	
+	<link rel="stylesheet" href="{{url_for('static',filename='bs.css')}}">
+
+</head>
+<body>
+	{% include 'includes/navbar.html' %}
+
+	{% block header %}
+	{% endblock %}
+		
+	
+	{% include 'includes/footer.html' %}
+</body>
+<script src="{{url_for('static',filename='bootstrap.min.js')}}"></script>
+<script src="{{url_for('static',filename='jquery-slim.min.js')}}"></script>
+
+</html>
